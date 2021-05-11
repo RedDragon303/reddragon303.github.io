@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="js/script.js"></script>
+  <script defer src="js/Sortable.min.js"></script>
+</head>
+<body>
+
+  <section class="todo-wrapper">
+    <div class="todo-head">
+      <h1>Todo</h1>
+      <button class="light-toggle"></button>
+    </div>
+    <input type="text" placeholder="Create a new todo..." name="todo-input" id="todo-input">
+    <div class="todo-body">
+      <div class="todos">
+      </div>
+      <div class="todo-foot">
+        <p class="items-left"><span class="item-count">0</span>items left</p>
+        <div class="tab-btns">
+          <button class="all">All</button>
+          <button class="active">Active</button>
+          <button class="completed">Completed</button>
+        </div>
+        <button class="clear">Clear Completed</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by Adam Copland.
+    </div>
+  </footer>
+</body>
+</html>
