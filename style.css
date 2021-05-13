@@ -12,7 +12,6 @@
 
   --bg: hsl(0, 0%, 98%);
   --bg-image: url(./images/bg-desktop-light.jpg);
-  --bg-image-mob: url(./images/bg-mobile-light.jpg);
   --icon: url(./images/icon-moon.svg);
 }
 
@@ -24,7 +23,6 @@
 
   --bg: hsl(235, 21%, 11%);
   --bg-image: url(./images/bg-desktop-dark.jpg);
-  --bg-image-mob: url(./images/bg-mobile-dark.jpg);
   --icon: url(./images/icon-sun.svg);
 }
 
@@ -219,4 +217,13 @@ footer {
 
 .attribution a {
   color: var(--gray-blue3);
+}
+
+@media screen and (max-width: 375px) {
+  :root {
+    --bg-image: url(./images/bg-mobile-light.jpg);
+  }
+  .dark-mode {
+    --bg-image: url(./images/bg-mobile-dark.jpg);
+  }
 }
